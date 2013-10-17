@@ -1,11 +1,24 @@
-# Netbeans folders#
-###################
-/nbproject/
+# C++ objects and libs
 
-# Sass cache files #
-#######################
-/<path to sass cache>/.sass-cache/
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
 
-# Temp-files folders#
-###################
-/temp-files/
+# Qt-es
+
+*.pro.user
+*.pro.user.*
+moc_*.cpp
+qrc_*.cpp
+Makefile
+*-build-*
+
+# OSX
+.DS_Store
+
