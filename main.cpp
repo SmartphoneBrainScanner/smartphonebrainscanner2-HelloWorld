@@ -29,8 +29,8 @@ int main(int argc, char *argv[])
     if (rect) {
         QObject::connect(myCallback,SIGNAL(timeTick8()),rect,SLOT(timeTick()));
         QObject::connect(myCallback,SIGNAL(valueSignal(QVariant)),rect,SLOT(channelValue(QVariant)));
-        //QObject::connect(app.data(), SIGNAL(aboutToQuit()), sbs2DataReader, SLOT(aboutToQuit()));
-        //QObject::connect((QObject*)rect, SIGNAL(quit()), app.data(), SLOT(quit()));
+        QObject::connect(&app, SIGNAL(aboutToQuit()), sbs2DataReader, SLOT(aboutToQuit()));
+        QObject::connect(&engine, SIGNAL(quit()), &app, SLOT(quit()));
         qDebug() << "succes";
     } else {
         qDebug() << "fail";
