@@ -13,8 +13,7 @@ QML_IMPORT_PATH =
 # Default rules for deployment.
 include(deployment.pri)
 
-include(../../smartphonebrainscanner2-core/src/sbs2.pri)
-#include(../../smartphonebrainscanner2-core/src/sbs2_binary_decryptor.pri)
+include(../smartphonebrainscanner2-core/src/sbs2.pri)
 
 HEADERS += \
     mycallback.h
